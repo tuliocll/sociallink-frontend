@@ -10,3 +10,8 @@ html,
 * {
   font-family: "Quicksand";
 }
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}

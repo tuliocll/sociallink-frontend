@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
     size?: number;
+    direction?: 'row' | 'column';
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -17,6 +18,10 @@ export const Container = styled.div<ContainerProps>`
   :hover {
       border-color: rgba(0,0,0,0.1);
   }
+
+  @media (max-width: 868px) {
+    width: 100vw;
+  }
 `;
 
 export const ContainerTitle = styled.div`
@@ -27,8 +32,9 @@ export const ContainerTitle = styled.div`
     justify-content: center;
 `;
 
-export const ContainerBody = styled.div`
+export const ContainerBody = styled.div<ContainerProps>`
     display: flex;
+    flex-direction: ${props => props.direction || 'row'};
     padding: 5px 20px;
     justify-content: center;
 `;

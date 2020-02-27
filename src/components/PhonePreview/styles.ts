@@ -27,4 +27,10 @@ export const Iframe = styled.iframe`
     height: 91%;
     border: 0px;
     border-radius: 8px;
+
+    @media (max-width: 868px) {
+        width: 58%;
+        height: 92%;
+        margin-top: 8px;
+  }
 `;
