@@ -1,0 +1,12 @@
+body,
+html,
+.root,
+.App {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f4f5;
+  height: 100vh;
+}
+* {
+  font-family: "Quicksand";
+}

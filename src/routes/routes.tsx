@@ -1,14 +1,18 @@
 import React from "react";
-import { Switch, useLocation, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
-import Dashboard from "../views/dashboard";
-
+import { About, Contact, Dashboard, User } from "../views";
+import NavBar from "../components/NavBar";
 export default function Routes() {
-  const location = useLocation();
-
   return (
-    <Switch>
-      <Route path="/dashboard" component={Dashboard} />
-    </Switch>
+    <>
+      <NavBar />
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/user" component={User} />
+      </Switch>
+    </>
   );
 }

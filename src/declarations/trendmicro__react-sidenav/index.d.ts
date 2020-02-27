@@ -50,8 +50,8 @@ interface ISideNav {
   componentClass?: void | string;
   disabled?: boolean;
   expanded?: boolean;
-  onToggle(): boolean;
-  onSelect(): string;
+  onToggle?(toogle: boolean): void;
+  onSelect?(selected: string): void;
   children?: any;
 }
 

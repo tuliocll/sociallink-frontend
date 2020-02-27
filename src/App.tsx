@@ -5,6 +5,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Routes from "./routes/routes";
 
+import "./styles/global.css";
+
 const Item: any = SortableElement(({ value }: { value: string }) => (
   <li>{value}</li>
 ));
