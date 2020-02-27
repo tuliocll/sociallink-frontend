@@ -11,6 +11,8 @@ export const Container = styled.div`
   height: 65px;
   justify-content: space-between;
   padding: 0px 50px;
+  border: 0px solid #ccc;
+  border-bottom-width: 2px;
 
   @media (max-width: 868px) {
     padding: 0px 5px;
